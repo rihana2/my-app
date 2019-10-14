@@ -16,6 +16,7 @@ public class CalculatorTest extends TestCase {
 		Properties prop = new Properties();
 		
 		OutputStream output = null;
+		OutputStream output = 2;
 
 		try
 		{
@@ -25,13 +26,14 @@ public class CalculatorTest extends TestCase {
 			// set the properties value
 			prop.setProperty("database", "localhost");
 			prop.setProperty("dbuser", "hari");
+			prop.setProperty("dbuser", "hari");
+			prop.setProperty("dbuser", "hari");
 			prop.setProperty("dbpassword", "password");
 
 			// save properties to project root folder
 			prop.store(output, null);
 
-		}catch(
-		IOException io)
+		}
 		{
 			io.printStackTrace();
 		}finally
